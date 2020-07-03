@@ -11,11 +11,21 @@ html{box-sizing:border-box}*,*:after,*:before{box-sizing:inherit}
 /* ---------------------------------------------------------------
 My Base Styles
 --------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
 body {
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   line-height: 1.5;
   margin: 0 auto;
+  border: 3px solid goldenrod;
+  background-color: black;
+  color: #8F98B9;
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  color: white;
 }
 
 h1 {
@@ -34,6 +44,131 @@ label, input {
   display: block;
 }
 
+.container {
+  padding: 20px 100px;
+}
+
 /* ---------------------------------------------------------------
-Project Specific Styles
+Header
 --------------------------------------------------------------- */
+
+header {
+  border: 3px solid palevioletred;
+  display: flex;
+  justify-content: space-between;
+}
+.color-mode {
+  display: flex;
+  align-items: center;
+  min-width: 150px;
+}
+
+.dark-mode-icon {
+  background: linear-gradient(to right, #46AFB3, #3BCF95);
+  width: 30%;
+  margin-left: 10px;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #252B41;
+  /* background-color: wheat; */
+  border-radius: 50%;
+}
+
+/* ---------------------------------------------------------------
+Main
+--------------------------------------------------------------- */
+
+main {
+  border: 3px solid peru;
+}
+
+.card {
+  background-color: #252B41;
+  /* border: 3px solid salmon; */
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  width: 250px;
+}
+
+.all-square-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.square-card .user-id {
+  font-weight: 400;
+}
+
+.square-card .count {
+  font-size: 4em;
+}
+
+.square-card .count-unit {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.square-card .daily-growth {
+  color: #3D9970;
+
+}
+
+.all-rectangle-cards {
+}
+
+.row-01, .row-02 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.rectangle-card {
+
+}
+
+.card-01 {
+  border-top: 4px solid #1DA1F2;
+}
+
+.card-02 {
+  border-top: 4px solid #1DA1F2;
+
+}
+
+.card-03 {
+  background: linear-gradient(to right, #4D28D0, #CF01C5, #ED7D2F, #F2E06E);
+  padding-top: 4px;
+}
+
+.gradient-border {
+  background-color: #252B41;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.card-04 {
+  border-top: 4px solid red;
+}
+
+.card-05 {
+
+}
+
+.card-06 {
+
+}
+
+.card-07 {
+
+}
+
+.card-08 {
+
+}
