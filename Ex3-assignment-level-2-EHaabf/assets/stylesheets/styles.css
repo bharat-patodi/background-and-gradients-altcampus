@@ -94,11 +94,13 @@ main {
   color: white;
   text-align: center;
   width: 250px;
+  padding-top: 10px;
 }
 
 .all-square-cards {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .square-card .user-id {
@@ -117,10 +119,15 @@ main {
 
 .square-card .daily-growth {
   color: #3D9970;
+  margin: 10px 0;
+}
 
+.square-card .daily-growth.negative-growth {
+  color: #e74c3c;
 }
 
 .all-rectangle-cards {
+  margin-top: 20px;
 }
 
 .row-01, .row-02 {
@@ -130,7 +137,12 @@ main {
 }
 
 .rectangle-card {
-
+  display: flex;
+  flex-wrap: wrap;
+}
+/* This is a nice try here. Try more of these nifty picks */
+.rectangle-card > *:not(img) {
+  flex-basis: 50%;
 }
 
 .card-01 {
@@ -151,6 +163,8 @@ main {
   background-color: #252B41;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .card-04 {
@@ -172,3 +186,28 @@ main {
 .card-08 {
 
 }
+
+
+/* Font Awesome */
+
+.fa-facebook-square {
+  color: #1DA1F2;
+}
+
+.fa-twitter {
+  color: #1DA1F2;
+}
+
+.fa-instagram {
+  /* color: linear-gradient(to right, #4D28D0, #CF01C5, #ED7D2F, #F2E06E); */
+  color: red;
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.fa-caret-up {
+
+}
+
