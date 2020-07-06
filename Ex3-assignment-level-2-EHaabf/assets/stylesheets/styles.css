@@ -18,8 +18,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   margin: 0 auto;
-  border: 3px solid goldenrod;
-  background-color: black;
+  background-color: #20222F;
   color: #8F98B9;
   font-weight: 700;
 }
@@ -53,7 +52,6 @@ Header
 --------------------------------------------------------------- */
 
 header {
-  border: 3px solid palevioletred;
   display: flex;
   justify-content: space-between;
 }
@@ -82,10 +80,6 @@ header {
 /* ---------------------------------------------------------------
 Main
 --------------------------------------------------------------- */
-
-main {
-  border: 3px solid peru;
-}
 
 .card {
   background-color: #252B41;
@@ -125,6 +119,13 @@ main {
 .square-card .daily-growth.negative-growth {
   color: #e74c3c;
 }
+.negative-growth {
+  color: #e74c3c;
+}
+
+.positive-growth {
+  color: #3D9970;
+}
 
 .all-rectangle-cards {
   margin-top: 20px;
@@ -143,7 +144,13 @@ main {
 /* This is a nice try here. Try more of these nifty picks */
 .rectangle-card > *:not(img) {
   flex-basis: 50%;
+  margin: 10px 0;
 }
+
+.rectangle-card .count {
+  font-size: 2em;
+}
+
 
 .card-01 {
   border-top: 4px solid #1DA1F2;
@@ -189,6 +196,10 @@ main {
 
 
 /* Font Awesome */
+
+.fas, .fab {
+  font-size: 1.5em;
+}
 
 .fa-facebook-square {
   color: #1DA1F2;
